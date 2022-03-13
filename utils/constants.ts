@@ -267,7 +267,7 @@ export const dynamicsPageSection = {
       bsi_ctabuttontextcolor: null,
       bsi_ctabuttonbgcolor: null,
       bsi_ctabuttonhoverbgcolor: null,
-      bsi_bordercolor: null,
+      bsi_bordercolor: "black",
       bsi_ctabuttonlink: "/test",
       bsi_overline: "Attached Component Overline",
       bsi_overlinetextcolor: null,
