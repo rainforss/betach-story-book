@@ -1,17 +1,18 @@
 import * as React from "react";
 import AnchorSection from "../components/AnchorSection";
 import { Box, Flex, Text } from "@chakra-ui/react";
+import { dynamicsPageSection } from "../utils/constants";
 
 const ContactFormSection: React.FunctionComponent = () => {
   return (
     <AnchorSection
-      sectionId="test"
-      key="test"
+      sectionId={dynamicsPageSection.bsi_sectionid}
+      key={dynamicsPageSection.bsi_pagesectionid}
       w="100%"
       minH={{ base: "60vh", md: "80vh" }}
       position="relative"
       overflow="hidden"
-      bgImage={`https://images.ctfassets.net/vjn6k5wzhope/4IegsXM0UjJENBm7qhFJAN/2c1cb8da71f2af8dc3a5a3e6bb783a8a/Sharp_Line_Background.png`}
+      bgImage={`${dynamicsPageSection.bsi_Background.bsi_cdnurl}?fm=jpg&fl=progressive`}
       bgSize="cover"
       bgPos="center"
     >
@@ -40,44 +41,52 @@ const ContactFormSection: React.FunctionComponent = () => {
         <Flex w={{ base: "100%", md: "45%" }} flexDir="column" mb={[12, 0]}>
           <Text
             as="h4"
-            color="inherit"
+            color={dynamicsPageSection.bsi_overlinetextcolor || "inherit"}
             fontWeight="bold"
             fontSize="1.2rem"
             textTransform="uppercase"
           >
-            Overline
+            {dynamicsPageSection.bsi_overline}
           </Text>
           <Text
             as="h2"
             fontSize={["1.75rem", "2.5rem"]}
             fontWeight="700"
-            color="inherit"
+            color={dynamicsPageSection.bsi_mainheadingtextcolor || "inherit"}
             mb={4}
             pb={4}
             borderStyle="dotted"
-            borderColor="transparent"
+            borderColor={dynamicsPageSection.bsi_bordercolor || "transparent"}
             borderWidth="0 0 5px 0"
             textTransform="uppercase"
           >
-            Main Heading
+            {dynamicsPageSection.bsi_mainheading}
           </Text>
           <Text
             as="h4"
-            color="inherit"
+            color={dynamicsPageSection.bsi_subheadingtextcolor || "inherit"}
             fontWeight="bold"
             fontSize="1.2rem"
             textTransform="uppercase"
             mb={6}
           >
-            Sub Heading
+            {dynamicsPageSection.bsi_subheading}
           </Text>
-          <Text as="p" color="inherit">
-            Paragraph
+          <Text
+            as="p"
+            color={dynamicsPageSection.bsi_paragraphtextcolor || "inherit"}
+          >
+            {dynamicsPageSection.bsi_paragraph}
           </Text>
         </Flex>
-        <Box w={{ base: "100%", md: "45%" }} suppressHydrationWarning>
-          D365 Marketing Form
-        </Box>
+        <Box
+          w={{ base: "100%", md: "45%" }}
+          suppressHydrationWarning
+          dangerouslySetInnerHTML={{
+            __html:
+              dynamicsPageSection.bsi_MarketingFormPage.msdyncrm_javascriptcode,
+          }}
+        ></Box>
       </Flex>
     </AnchorSection>
   );

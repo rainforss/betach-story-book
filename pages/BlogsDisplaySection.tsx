@@ -2,13 +2,13 @@ import { Box, Flex, Heading } from "@chakra-ui/react";
 import * as React from "react";
 import AnchorSection from "../components/AnchorSection";
 import BlogTile from "../components/BlogTile";
-import { dynamicsBlogs } from "../utils/constants";
+import { dynamicsBlogs, dynamicsPageSection } from "../utils/constants";
 
 const BlogsDisplaySection: React.FunctionComponent = () => {
   return (
     <AnchorSection sectionId="test" key="test">
       <Heading as="h2" width="90%" mx="auto" my={16}>
-        Main Heading
+        {dynamicsPageSection.bsi_mainheading}
       </Heading>
       <Flex width="90%" mx="auto" flexWrap="wrap" mb={16} style={{ gap: "6%" }}>
         {dynamicsBlogs.map((db) => (

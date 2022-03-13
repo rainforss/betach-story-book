@@ -57,6 +57,7 @@ const ProductFeatureVideoLeftSection: React.FunctionComponent<
             flexDirection={{ base: "column-reverse", xl: "row" }}
             pt={2}
             align="stretch"
+            w="100%"
             style={{ gap: "50px" }}
           >
             <Box w={{ base: "100%", xl: "50%" }}>

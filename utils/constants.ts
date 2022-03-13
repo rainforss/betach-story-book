@@ -220,11 +220,12 @@ export const dynamicsPageSection = {
   "@odata.etag": 'W/"192711097"',
   bsi_name: "Home Page Hero Section",
   bsi_pagesectionid: "6fc845ff-2473-ec11-8943-000d3a34abbf",
-  bsi_videourl: null,
-  bsi_paragraph: null,
+  bsi_videourl:
+    "https://www.youtube.com/embed/zoaJ-rAPj4c?wmode=opaque&enablejsapi=1",
+  bsi_paragraph: "Paragraph",
   bsi_ctabuttonlink: "/blogs",
   bsi_ctabuttontext: "Find out more",
-  bsi_youtubevideoid: null,
+  bsi_youtubevideoid: "zoaJ-rAPj4c",
   "_bsi_designedsection_value@OData.Community.Display.V1.FormattedValue":
     "HeroSection",
   "_bsi_designedsection_value@Microsoft.Dynamics.CRM.associatednavigationproperty":
@@ -232,14 +233,15 @@ export const dynamicsPageSection = {
   "_bsi_designedsection_value@Microsoft.Dynamics.CRM.lookuplogicalname":
     "bsi_designedsection",
   _bsi_designedsection_value: "0188f85f-2173-ec11-8943-000d3a34abbf",
-  bsi_youtubevideoalttext: null,
+  bsi_youtubevideoalttext: "Tarin's owner Kim and her lovely pet",
   "bsi_hasctabutton@OData.Community.Display.V1.FormattedValue": "Yes",
   bsi_hasctabutton: true,
   bsi_overline: "Overline",
   bsi_mainheading: "Main Heading",
-  bsi_subheading: null,
+  bsi_subheading: "Sub Heading",
   bsi_sectionid: "introductions",
-  bsi_featuredproducts: null,
+  bsi_featuredproducts:
+    "Featured Product 1; Featured Product 2; Featured Product 3",
   bsi_backgroundcolor: null,
   bsi_overlinetextcolor: null,
   bsi_mainheadingtextcolor: null,
@@ -355,5 +357,11 @@ export const dynamicsPageSection = {
     bsi_alttext: "Hero Image",
     bsi_imageassetid: "50ba357a-4d73-ec11-8943-000d3a34abbf",
   },
-  bsi_MarketingFormPage: null,
+  bsi_MarketingFormPage: {
+    msdyncrm_javascriptcode:
+      '<div data-form-block-id="513c056c-55e9-ea11-a817-000d3a5c2ece"></div>\r\n' +
+      '<script src="https://mktdplp102cdn.azureedge.net/public/1.64.2003.0/static/js/form-loader.js"></script>\r\n' +
+      `<div id="dyPUsfqMM9y-Tu5lVZ-S09tfMAqWvdIXuvg8Mqw0pEqA"></div><script language="javascript" type="text/javascript">(function (id, f, t, ws, ms_tr_il_08, ms_tr_il_w_01) { var tr = function (cb) { var count = 0; var callback = function () { if (count == 0) { count++; if (w) { w.w(id, t, cb); } } }; var ts = document.createElement('script'); ts.src = ws; ts.type = 'text/javascript'; ts.onload = callback; ts.onreadystatechange = function () { if (this.readyState == 'complete' || this.readyState == 'loaded') { callback(); } }; var head = document.getElementsByTagName('head')[0]; head.appendChild(ts); }; if (typeof ms_tr_il_08 === 'function') { if (ms_tr_il_w_01 === null) { tr(function() { ms_tr_il_08(id, f, t); }); } else { ms_tr_il_w_01.w(id, t, function(websiteVisitedParams) { ms_tr_il_08(id, f, t, websiteVisitedParams); }, null); } } else { tr(); }})('yPUsfqMM9y-Tu5lVZ-S09tfMAqWvdIXuvg8Mqw0pEqA', 'https://6247c9995e984a198b87a3676c9888cb.svc.dynamics.com/f', 'https://6247c9995e984a198b87a3676c9888cb.svc.dynamics.com/t', 'https://6247c9995e984a198b87a3676c9888cb.svc.dynamics.com/t/w', typeof ms_tr_il_08 === "undefined" ? null : ms_tr_il_08, typeof ms_tr_il_w_01 === "undefined" ? null : ms_tr_il_w_01);</script>`,
+    msdyncrm_formpageid: "513c056c-55e9-ea11-a817-000d3a5c2ece",
+  },
 };

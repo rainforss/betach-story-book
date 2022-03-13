@@ -1,6 +1,7 @@
 import { Center, Flex, Heading, Text } from "@chakra-ui/layout";
 import * as React from "react";
 import AnchorSection from "../components/AnchorSection";
+import { dynamicsPageSection } from "../utils/constants";
 
 const BusinessBanterSection: React.FunctionComponent = () => {
   return (
@@ -17,10 +18,10 @@ const BusinessBanterSection: React.FunctionComponent = () => {
         <Flex w="90%" justify="center" flexDirection="column" align="center">
           <Flex direction="column" mb={12}>
             <Heading as="h2" color="whiteAlpha.900" fontSize="3rem" mb={6}>
-              Main Heading
+              {dynamicsPageSection.bsi_mainheading}
             </Heading>
             <Text as="h3" textAlign="center">
-              Sub Heading
+              {dynamicsPageSection.bsi_subheading}
             </Text>
           </Flex>
           <iframe
