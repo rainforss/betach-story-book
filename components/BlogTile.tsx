@@ -1,12 +1,11 @@
 import { Badge, Flex, Image, Link, Text } from "@chakra-ui/react";
 import * as React from "react";
 import NextLink from "next/link";
-import { DynamicsBlog } from "../utils/types";
 
 interface IBlogTileProps {
   blogTitle: string;
-  blogAuthors: DynamicsBlog["bsi_Blog_bsi_BlogAuthor_bsi_BlogAuthor"];
-  blogTags: DynamicsBlog["bsi_BlogCategory_bsi_Blog_bsi_Blog"];
+  blogAuthors: any;
+  blogTags: any;
   blogSlug: string;
   publishDate: Date;
   blogCoverText: string;
@@ -18,7 +17,7 @@ const BlogTile: React.FunctionComponent<IBlogTileProps> = (props) => {
   return (
     <article>
       <Flex direction="column" width="100%" style={{ gap: "15px" }}>
-        <NextLink href={`/blogs/${props.blogSlug}`}>
+        <NextLink href={`/blogs/${props.blogSlug}`} passHref>
           <Image
             src={`${props.blogCoverImageUrl}?fm=jpg&fl=progressive`}
             alt={props.blogCoverImageAltText}
@@ -29,7 +28,7 @@ const BlogTile: React.FunctionComponent<IBlogTileProps> = (props) => {
         </NextLink>
         <Flex justify="space-between">
           <Flex align="center">
-            {props.blogAuthors.map((b) => (
+            {props.blogAuthors.map((b: any) => (
               <NextLink
                 href={`/blogs/author/${b.bsi_slug}/page/1`}
                 passHref
@@ -40,7 +39,7 @@ const BlogTile: React.FunctionComponent<IBlogTileProps> = (props) => {
             ))}
           </Flex>
           <Flex align="center">
-            {props.blogTags.map((b) => (
+            {props.blogTags.map((b: any) => (
               <Badge colorScheme="teal" ml={2} key={b.bsi_slug}>
                 <NextLink href={`/blogs/category/${b.bsi_slug}/page/1`}>
                   {b.bsi_name}
@@ -52,7 +51,7 @@ const BlogTile: React.FunctionComponent<IBlogTileProps> = (props) => {
         <Text as="small" suppressHydrationWarning>
           {props.publishDate.toLocaleDateString()}
         </Text>
-        <NextLink href={`/blogs/${props.blogSlug}`}>
+        <NextLink href={`/blogs/${props.blogSlug}`} passHref>
           <Link fontSize="1.7rem" fontWeight="bold">
             {props.blogTitle}
           </Link>
