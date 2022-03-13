@@ -34,7 +34,7 @@ const ClientFeatureSection: React.FunctionComponent = () => {
             mb={4}
             pb={4}
             borderStyle="dotted"
-            borderColor="transparent"
+            borderColor="black"
             borderWidth="0 0 5px 0"
             textTransform="uppercase"
           >

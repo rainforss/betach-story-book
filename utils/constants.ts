@@ -250,7 +250,7 @@ export const dynamicsPageSection = {
   bsi_ctabuttontextcolor: null,
   bsi_ctabuttonbgcolor: null,
   bsi_ctabuttonhoverbgcolor: null,
-  bsi_bordercolor: null,
+  bsi_bordercolor: "black",
   "bsi_sequence@OData.Community.Display.V1.FormattedValue": "1",
   bsi_sequence: 1,
   bsi_AttachedComponent_bsi_PageSection_bsi: [
@@ -279,7 +279,7 @@ export const dynamicsPageSection = {
       bsi_AttachedComponent_bsi_ImageAsset_bsi_: [
         {
           bsi_cdnurl:
-            "https%3A%2F%2Fimages.ctfassets.net%2Fvjn6k5wzhope%2F7mT7qW3DO4jZL9ZjqaYBSN%2F3e742ef02b25c25d629d855d1c782384%2FD365_Business_Central.png%3Ffm%3Djpg%26fl%3Dprogressive&w=256&q=75",
+            "https://images.ctfassets.net/vjn6k5wzhope/2vphbZCXKjtvSTwk2K4Wfo/d39a7f7aa7fd6425b4ea4afbd06dbfc5/D365_Sales.png",
         },
       ],
     },
@@ -296,7 +296,7 @@ export const dynamicsPageSection = {
       bsi_ctabuttontextcolor: null,
       bsi_ctabuttonbgcolor: null,
       bsi_ctabuttonhoverbgcolor: null,
-      bsi_bordercolor: null,
+      bsi_bordercolor: "black",
       bsi_ctabuttonlink: "/test",
       bsi_overline: "Attached Component Overline",
       bsi_overlinetextcolor: null,
@@ -308,7 +308,7 @@ export const dynamicsPageSection = {
       bsi_AttachedComponent_bsi_ImageAsset_bsi_: [
         {
           bsi_cdnurl:
-            "https%3A%2F%2Fimages.ctfassets.net%2Fvjn6k5wzhope%2F7mT7qW3DO4jZL9ZjqaYBSN%2F3e742ef02b25c25d629d855d1c782384%2FD365_Business_Central.png%3Ffm%3Djpg%26fl%3Dprogressive&w=256&q=75",
+            "https://images.ctfassets.net/vjn6k5wzhope/76y75wGw1VAtO2uXcRRHyP/44a99020fb2028d99be3de5b418715e6/D365_Customer_Service.png",
         },
       ],
     },
@@ -325,7 +325,7 @@ export const dynamicsPageSection = {
       bsi_ctabuttontextcolor: null,
       bsi_ctabuttonbgcolor: null,
       bsi_ctabuttonhoverbgcolor: null,
-      bsi_bordercolor: null,
+      bsi_bordercolor: "black",
       bsi_ctabuttonlink: "/test",
       bsi_overline: "Attached Component Overline",
       bsi_overlinetextcolor: null,
@@ -337,7 +337,7 @@ export const dynamicsPageSection = {
       bsi_AttachedComponent_bsi_ImageAsset_bsi_: [
         {
           bsi_cdnurl:
-            "https%3A%2F%2Fimages.ctfassets.net%2Fvjn6k5wzhope%2F7mT7qW3DO4jZL9ZjqaYBSN%2F3e742ef02b25c25d629d855d1c782384%2FD365_Business_Central.png%3Ffm%3Djpg%26fl%3Dprogressive&w=256&q=75",
+            "https://images.ctfassets.net/vjn6k5wzhope/7mT7qW3DO4jZL9ZjqaYBSN/3e742ef02b25c25d629d855d1c782384/D365_Business_Central.png",
         },
       ],
     },
