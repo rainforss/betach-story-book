@@ -80,25 +80,24 @@ const ProductSection: React.FunctionComponent<IProductSectionProps> = () => {
                       </Text>
                     </Flex>
                     {dp.bsi_hasctabutton && (
-                      <Link href={dp.bsi_ctabuttonlink || "/test"}>
-                        <Text
-                          as="a"
-                          py={2}
-                          px={6}
-                          bgColor={dp.bsi_ctabuttonbgcolor || "whiteAlpha.900"}
-                          color={dp.bsi_ctabuttontextcolor || "inherit"}
-                          borderRadius="300px"
-                          transition="ease all 0.5s"
-                          _hover={{
-                            backgroundColor: "#9be368",
-                            boxShadow: "0px 12px 20px rgba(46, 229, 157, 0.4)",
-                            color: "#fff",
-                            transform: "translateY(-2px)",
-                          }}
-                          boxShadow="0px 8px 15px rgba(0, 0, 0, 0.1)"
-                        >
-                          {dp.bsi_ctabuttontext}
-                        </Text>
+                      <Link
+                        href={dp.bsi_ctabuttonlink || "/test"}
+                        as="a"
+                        py={2}
+                        px={6}
+                        bgColor={dp.bsi_ctabuttonbgcolor || "whiteAlpha.900"}
+                        color={dp.bsi_ctabuttontextcolor || "inherit"}
+                        borderRadius="300px"
+                        transition="ease all 0.5s"
+                        _hover={{
+                          backgroundColor: "#9be368",
+                          boxShadow: "0px 12px 20px rgba(46, 229, 157, 0.4)",
+                          color: "#fff",
+                          transform: "translateY(-2px)",
+                        }}
+                        boxShadow="0px 8px 15px rgba(0, 0, 0, 0.1)"
+                      >
+                        {dp.bsi_ctabuttontext}
                       </Link>
                     )}
                   </Flex>

@@ -84,25 +84,24 @@ const HeroSection: React.FunctionComponent = () => {
               {dynamicsPageSection.bsi_subheading}
             </Text>
             {dynamicsPageSection.bsi_hasctabutton && (
-              <Link href={dynamicsPageSection.bsi_ctabuttonlink}>
-                <Text
-                  as="a"
-                  py={2}
-                  px={6}
-                  transition="ease all 0.5s"
-                  _hover={{
-                    backgroundColor: "#9be368",
-                    boxShadow: "0px 15px 20px rgba(46, 229, 157, 0.4)",
-                    color: "#fff",
-                    transform: "translateY(-2px)",
-                  }}
-                  color={dynamicsPageSection.bsi_ctabuttontextcolor || "black"}
-                  borderRadius="300px"
-                  bgColor={dynamicsPageSection.bsi_ctabuttonbgcolor || "white"}
-                  boxShadow="0px 8px 15px rgba(0, 0, 0, 0.1)"
-                >
-                  {dynamicsPageSection.bsi_ctabuttontext}
-                </Text>
+              <Link
+                href={dynamicsPageSection.bsi_ctabuttonlink}
+                as="a"
+                py={2}
+                px={6}
+                transition="ease all 0.5s"
+                _hover={{
+                  backgroundColor: "#9be368",
+                  boxShadow: "0px 15px 20px rgba(46, 229, 157, 0.4)",
+                  color: "#fff",
+                  transform: "translateY(-2px)",
+                }}
+                color={dynamicsPageSection.bsi_ctabuttontextcolor || "black"}
+                borderRadius="300px"
+                bgColor={dynamicsPageSection.bsi_ctabuttonbgcolor || "white"}
+                boxShadow="0px 8px 15px rgba(0, 0, 0, 0.1)"
+              >
+                {dynamicsPageSection.bsi_ctabuttontext}
               </Link>
             )}
           </Flex>
@@ -164,26 +163,25 @@ const HeroSection: React.FunctionComponent = () => {
                               {a.bsi_subtitle}
                             </Text>
                             {a.bsi_hasctabutton && (
-                              <Link href={a.bsi_ctabuttonlink}>
-                                <Text
-                                  as="a"
-                                  py={2}
-                                  px={6}
-                                  transition="ease all 0.5s"
-                                  _hover={{
-                                    backgroundColor: "#9be368",
-                                    boxShadow:
-                                      "0px 15px 20px rgba(46, 229, 157, 0.4)",
-                                    color: "#fff",
-                                    transform: "translateY(-2px)",
-                                  }}
-                                  color={a.bsi_ctabuttontextcolor || "black"}
-                                  borderRadius="300px"
-                                  bgColor={a.bsi_ctabuttonbgcolor || "white"}
-                                  boxShadow="0px 8px 15px rgba(0, 0, 0, 0.1)"
-                                >
-                                  {a.bsi_ctabuttontext}
-                                </Text>
+                              <Link
+                                href={a.bsi_ctabuttonlink}
+                                as="a"
+                                py={2}
+                                px={6}
+                                transition="ease all 0.5s"
+                                _hover={{
+                                  backgroundColor: "#9be368",
+                                  boxShadow:
+                                    "0px 15px 20px rgba(46, 229, 157, 0.4)",
+                                  color: "#fff",
+                                  transform: "translateY(-2px)",
+                                }}
+                                color={a.bsi_ctabuttontextcolor || "black"}
+                                borderRadius="300px"
+                                bgColor={a.bsi_ctabuttonbgcolor || "white"}
+                                boxShadow="0px 8px 15px rgba(0, 0, 0, 0.1)"
+                              >
+                                {a.bsi_ctabuttontext}
                               </Link>
                             )}
                           </Flex>
