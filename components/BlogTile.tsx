@@ -49,7 +49,7 @@ const BlogTile: React.FunctionComponent<IBlogTileProps> = (props) => {
           </Flex>
         </Flex>
         <Text as="small" suppressHydrationWarning>
-          {props.publishDate.toLocaleDateString()}
+          {props.publishDate.toLocaleDateString()} {`"Blog Modified On"`}
         </Text>
         <NextLink href={`/blogs/${props.blogSlug}`} passHref>
           <Link fontSize="1.7rem" fontWeight="bold">

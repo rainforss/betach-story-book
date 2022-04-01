@@ -1,8 +1,8 @@
 import Image from "next/image";
 import { Box, Flex, Heading, Text } from "@chakra-ui/layout";
 import AnchorSection from "../components/AnchorSection";
-import NextLink from "next/link";
 import { dynamicsPageSection } from "../utils/constants";
+import { Link } from "@chakra-ui/react";
 
 interface IProductSectionProps {}
 
@@ -80,7 +80,7 @@ const ProductSection: React.FunctionComponent<IProductSectionProps> = () => {
                       </Text>
                     </Flex>
                     {dp.bsi_hasctabutton && (
-                      <NextLink href={dp.bsi_ctabuttonlink || "/test"} passHref>
+                      <Link href={dp.bsi_ctabuttonlink || "/test"}>
                         <Text
                           as="a"
                           py={2}
@@ -99,7 +99,7 @@ const ProductSection: React.FunctionComponent<IProductSectionProps> = () => {
                         >
                           {dp.bsi_ctabuttontext}
                         </Text>
-                      </NextLink>
+                      </Link>
                     )}
                   </Flex>
                 )

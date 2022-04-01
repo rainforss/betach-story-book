@@ -1,8 +1,7 @@
 import { Box, Center, Flex, Heading, Text } from "@chakra-ui/layout";
 import AnchorSection from "../components/AnchorSection";
-import NextLink from "next/link";
 import React, { useEffect, useState } from "react";
-import { SlideFade } from "@chakra-ui/react";
+import { Link, SlideFade } from "@chakra-ui/react";
 import { dynamicsPageSection } from "../utils/constants";
 
 const HeroSection: React.FunctionComponent = () => {
@@ -85,7 +84,7 @@ const HeroSection: React.FunctionComponent = () => {
               {dynamicsPageSection.bsi_subheading}
             </Text>
             {dynamicsPageSection.bsi_hasctabutton && (
-              <NextLink href={dynamicsPageSection.bsi_ctabuttonlink} passHref>
+              <Link href={dynamicsPageSection.bsi_ctabuttonlink}>
                 <Text
                   as="a"
                   py={2}
@@ -104,7 +103,7 @@ const HeroSection: React.FunctionComponent = () => {
                 >
                   {dynamicsPageSection.bsi_ctabuttontext}
                 </Text>
-              </NextLink>
+              </Link>
             )}
           </Flex>
         ) : (
@@ -165,7 +164,7 @@ const HeroSection: React.FunctionComponent = () => {
                               {a.bsi_subtitle}
                             </Text>
                             {a.bsi_hasctabutton && (
-                              <NextLink href={a.bsi_ctabuttonlink} passHref>
+                              <Link href={a.bsi_ctabuttonlink}>
                                 <Text
                                   as="a"
                                   py={2}
@@ -185,7 +184,7 @@ const HeroSection: React.FunctionComponent = () => {
                                 >
                                   {a.bsi_ctabuttontext}
                                 </Text>
-                              </NextLink>
+                              </Link>
                             )}
                           </Flex>
                         </SlideFade>

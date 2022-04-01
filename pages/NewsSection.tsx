@@ -1,7 +1,6 @@
 import { Box, Flex, Link, Text } from "@chakra-ui/layout";
 import * as React from "react";
 import AnchorSection from "../components/AnchorSection";
-import NextLink from "next/link";
 import { dynamicsPageSection } from "../utils/constants";
 
 interface INewsSectionProps {}
@@ -48,18 +47,17 @@ const NewsSection: React.FunctionComponent<INewsSectionProps> = () => {
                       {dp.bsi_description}
                     </Text>
                     {dp.bsi_hasctabutton && (
-                      <NextLink href={dp.bsi_ctabuttonlink || "/test"} passHref>
-                        <Link
-                          as="span"
-                          py={4}
-                          px={6}
-                          bg="royalblue"
-                          color="whiteAlpha.800"
-                          borderRadius="300px"
-                        >
-                          {dp.bsi_ctabuttontext}
-                        </Link>
-                      </NextLink>
+                      <Link
+                        href={dp.bsi_ctabuttonlink || "/test"}
+                        as="span"
+                        py={4}
+                        px={6}
+                        bg="royalblue"
+                        color="whiteAlpha.800"
+                        borderRadius="300px"
+                      >
+                        {dp.bsi_ctabuttontext}
+                      </Link>
                     )}
                   </Flex>
                 )
